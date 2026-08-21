@@ -18,14 +18,7 @@ scene.add(cube);
 
 camera.position.z = 5;
 
-function animate() {
-  requestAnimationFrame(animate);
+// cube.scale.y = 2;
+cube.scale.set(2, 0.5, 1);
 
-  // 毎フレーム少しずつ回転させる
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.01;
-
-  renderer.render(scene, camera);
-}
-
-animate();
+renderer.render(scene, camera);
